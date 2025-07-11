@@ -50,7 +50,7 @@ class Zwig_View extends Zend_View_Abstract
             $this->_pathSet = true;
         }
         $template = $this->_zwig->loadTemplate($script);
-        $template->display(get_object_vars($this));
+        $template->display($this->getVars());
     }
 }
 
