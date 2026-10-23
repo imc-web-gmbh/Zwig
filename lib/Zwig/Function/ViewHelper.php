@@ -22,6 +22,7 @@ class Zwig_Function_ViewHelper extends Twig_Function
 
     public function __construct($name, /*Zend_View_Helper_Interface */$helper)
     {
+        parent::__construct();
         $this->name = $name;
         $this->helper = $helper;
     }
